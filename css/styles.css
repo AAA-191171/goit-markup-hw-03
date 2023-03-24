@@ -1,0 +1,186 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #434455;
+  background-color: #ffffff;
+}
+:root ;
+.header {
+}
+
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+.heder-logo {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #4d5ae5;
+}
+
+.heder-logo-studio {
+  color: #2e2f42;
+}
+
+.head-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: #2e2f42;
+}
+
+.head-link:is(:hover, :focus) {
+  color: #404bbf;
+}
+
+.header-address {
+  font-style: normal;
+}
+
+.header-address-mail {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.header-address-mail:is(:hover, :focus) {
+  color: #404bbf;
+}
+
+.section-one {
+  background-color: #2e2f42;
+}
+
+.section-one-titl {
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+.section-one-button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.section-one-button {
+  background-color: #4d5ae5;
+}
+.section-one-button:is(:hover, :focus) {
+  background-color: #404bbf;
+}
+
+.button-text:is(:hover, :focus) {
+  color: #404bbf;
+}
+.section-one-button {
+  cursor: pointer;
+}
+.section-two-li {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.section-two-par {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+.section-three {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+}
+.section-four {
+  background-color: #f4f4fd;
+}
+
+.section-four {
+}
+.section-four-team {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+}
+.section-four-h {
+  background-color: #ffffff;
+}
+
+.footer {
+  background-color: #2e2f42;
+}
+
+.heder-logo {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #4d5ae5;
+}
+
+.footer-logo-studio {
+  color: #f4f4fd;
+}
+
+.portfolio-one-button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #4d5ae5;
+}
+.portfolio-one-button {
+  background-color: #f4f4fd;
+}
+.portfolio-button-text:is(:hover, :focus) {
+  color: #ffffff;
+}
+
+.portfolio-one-button:is(:hover, :focus) {
+  background-color: #404bbf;
+}
+
+.portfolio-one-button {
+  cursor: pointer;
+}
+.portfolio-two-one {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.portfolio-two-p {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}

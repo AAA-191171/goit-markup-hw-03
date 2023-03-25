@@ -1,9 +1,14 @@
+:root {
+  --main-title-color: #ffffff;
+  --logo-color-web: #4d5ae5;
+  --logo-color-studio: #2e2f42;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   color: #434455;
   background-color: #ffffff;
 }
-:root ;
 .header {
 }
 
@@ -23,11 +28,11 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #4d5ae5;
+  color: var(--logo-color-web, #4d5ae5);
 }
 
 .heder-logo-studio {
-  color: #2e2f42;
+  color: var(--logo-color-studio, #2e2f42);
 }
 
 .head-link {
@@ -66,7 +71,7 @@ body {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: var(--main-title-color, #ffffff);
 }
 .section-one-button {
   font-family: 'Roboto', sans-serif;

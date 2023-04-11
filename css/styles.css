@@ -48,9 +48,9 @@ img {
   --section-four-team: #2e2f42;
   --section-four-h-background-color: #ffffff;
   --footer-background-color: #2e2f42;
-  --portfolio-one-button-color: #4d5ae5;
-  --portfolio-one-button-background-color: #f4f4fd;
-  --portfolio-one-button-hf-background-color: #404bbf;
+  --portfolio-button-color: #4d5ae5;
+  --portfolio-button-background-color: #f4f4fd;
+  --portfolio-button-hf-background-color: #404bbf;
   --portfolio-button-text-hf-color: #ffffff;
   --portfolio-two-one: #2e2f42;
   --portfolio-two-p: #434455;
@@ -272,31 +272,53 @@ body {
 }
 .section-four-h {
   background-color: var(--section-four-h-background-color, #ffffff);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .section-four-team {
+  display: flex;
+  gap: 24px;
 }
 
-.section-two-li {
+.section-four-img {
+  margin-bottom: 32px;
+}
+.section-four-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--section-two-li, #2e2f42);
+  margin-bottom: 8px;
 }
 
-.section-two-par {
+.section-four-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--section-two-par, #434455);
+  margin-bottom: 32px;
 }
+
 /*---------------------Footer------------*/
 
 .footer {
   background-color: var(--footer-background-color, #2e2f42);
 }
 
-.heder-logo {
+.footer-logo {
   font-family: 'Raleway', sans-serif;
-  font-style: normal;
+
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
+  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
   color: var(--logo-color-web, #4d5ae5);
 }
 
@@ -307,37 +329,89 @@ body {
   color: var (--footer-text, #e7e9fc);
   margin-top: 17.5px;
 }
+/*----------help-------------------*/
+:root {
+  --body-color: #434455;
+  --body-background-color: #ffffff;
+  --section-one-titl-color: #ffffff;
+  --logo-color-web: #4d5ae5;
+  --logo-color-studio: #2e2f42;
+  --head-link: #2e2f42;
+  --head-link-hf: #404bbf;
+  --header-address-mail: #434455;
+  --header-address-mail-hf: #404bbf;
+  --section-one-background-color: #2e2f42;
+  --section-one-button-color: #ffffff;
+  --section-one-button-background-color: #4d5ae5;
+  --section-one-button-hf: #404bbf;
+  --button-text-hf: #404bbf;
+  --footer-logo-studio: #f4f4fd;
+  --footer-text: #e7e9fc;
+  --section-two-li: #2e2f42;
+  --section-two-par: #434455;
+  --section-three: #2e2f42;
+  --section-four-background-color: #f4f4fd;
+  --section-four-team: #2e2f42;
+  --section-four-h-background-color: #ffffff;
+  --footer-background-color: #2e2f42;
+  --portfolio-button-color: #4d5ae5;
+  --portfolio-button-background-color: #f4f4fd;
+  --portfolio-button-hf-background-color: #404bbf;
+  --portfolio-button-text-hf-color: #ffffff;
+  --portfolio-two-one: #2e2f42;
+  --portfolio-two-p: #434455;
+}
 
 /*--------------Portfolio----------------*/
-.header {
+.button-container {
+  padding-top: 96px;
+}
+.photo-container {
+  padding-bottom: 120px;
 }
 
-.portfolio-one {
+.button-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
 }
 
-.header-list {
-}
-
-.portfolio-one-button {
+.portfolio-button {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: var(--portfolio-one-button-color, #4d5ae5);
+  color: var(--portfolio-button-color, #4d5ae5);
 }
-.portfolio-one-button {
-  background-color: var(--portfolio-one-button-background-color, #f4f4fd);
+.portfolio-button-text {
+  border: none;
+  padding: 12px 24px;
+  font-family: “Roboto”, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--portfolio-button-text-color, #ffffff);
+  background-color: var(--light);
+  cursor: pointer;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+.portfolio-button {
+  background-color: var(--portfoli-button-background-color, #f4f4fd);
 }
 .portfolio-button-text:is(:hover, :focus) {
   color: var(--portfolio-button-text-hf-color, #ffffff);
 }
 
-.portfolio-one-button:is(:hover, :focus) {
-  background-color: var(--portfolio-one-button-hf-background-color, #404bbf);
+.portfolio-button:is(:hover, :focus) {
+  background-color: var(--portfolio-button-hf-background-color, #404bbf);
 }
 
-.portfolio-one-button {
+.portfolio-button {
   cursor: pointer;
 }
 .portfolio-two-one {
@@ -352,12 +426,4 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--portfolio-two-p, #434455);
-}
-
-.box portfolio-one-button {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  left: 482px;
-  top: 213px;
 }

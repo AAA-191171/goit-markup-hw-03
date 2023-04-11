@@ -1,3 +1,29 @@
+h1,
+h2,
+h3,
+p,
+ul,
+img,
+a {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 :root {
   --body-color: #434455;
   --body-background-color: #ffffff;
@@ -14,6 +40,7 @@
   --section-one-button-hf: #404bbf;
   --button-text-hf: #404bbf;
   --footer-logo-studio: #f4f4fd;
+  --footer-text: #e7e9fc;
   --section-two-li: #2e2f42;
   --section-two-par: #434455;
   --section-three: #2e2f42;
@@ -41,29 +68,72 @@ body {
 .link {
   text-decoration: none;
 }
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
 
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+/*-----------------header----------------*/
+
+.header {
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--accent);
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
 .heder-logo {
   font-family: 'Raleway', sans-serif;
-  font-style: normal;
+  align-items: center;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
   color: var(--logo-color-web, #4d5ae5);
+  margin-left: 156px;
 }
 
 .heder-logo-studio {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: var(--logo-color-studio, #2e2f42);
 }
 
-.head-link {
+.header-list {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
 
+  letter-spacing: 0.02em;
+  display: flex;
+  margin-left: 76px;
+  gap: 40px;
+}
+
+.header-item {
+}
+
+.head-link {
   color: var(--head-link, #2e2f42);
 }
 
@@ -76,6 +146,7 @@ body {
 }
 
 .header-address-mail {
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--header-address-mail, #434455);
@@ -85,24 +156,54 @@ body {
   color: var(--header-address-mail-hf, #404bbf);
 }
 
+.address {
+  font-style: normal;
+  line-height: 1.5;
+  color: var(--header-address-mail-hf, #404bbf);
+}
+.header-address {
+  display: flex;
+  gap: 40px;
+  margin-right: 156px;
+}
+
+/*---------------------Section-1------------*/
 .section-one {
   background-color: var(--section-one-background-color, #2e2f42);
 }
 
 .section-one-titl {
+  margin-bottom: 48px;
+  font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--section-one-titl-color, #ffffff);
+  padding-top: 188px;
+}
+
+.section-one-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 188px;
 }
 .section-one-button {
+  border: none;
+  padding: 16px 32px;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--section-one-button-color, #ffffff);
+  background-color: var(--section-one-button-background-color, #4d5ae5);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  cursor: pointer;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .section-one-button {
@@ -113,10 +214,17 @@ body {
 }
 
 .button-text:is(:hover, :focus) {
-  color: var(--button-text-hf, #404bbf);
+  color: var(--head-link, #2e2f42);
 }
-.section-one-button {
-  cursor: pointer;
+
+/*---------------------Section-2------------*/
+.features {
+}
+.section-two {
+  display: flex;
+  gap: 24px;
+}
+.section-two-container {
 }
 .section-two-li {
   font-weight: 500;
@@ -131,6 +239,11 @@ body {
   letter-spacing: 0.02em;
   color: var(--section-two-par, #434455);
 }
+/*---------------------Section-3------------*/
+
+.section-three-photo {
+  padding-bottom: 120px;
+}
 .section-three {
   font-size: 36px;
   line-height: 1.11;
@@ -139,20 +252,37 @@ body {
   text-transform: capitalize;
   color: var(--section-three, #2e2f42);
 }
+.section-three-list {
+  display: flex;
+  gap: 24px;
+}
+/*---------------------Section-4------------*/
+
 .section-four {
   background-color: var(--section-four-background-color, #f4f4fd);
 }
-.section-four-team {
+.section-four-titel {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--section-four-team, #2e2f42);
+  margin-bottom: 72px;
 }
 .section-four-h {
   background-color: var(--section-four-h-background-color, #ffffff);
 }
+
+.section-four-team {
+}
+
+.section-two-li {
+}
+
+.section-two-par {
+}
+/*---------------------Footer------------*/
 
 .footer {
   background-color: var(--footer-background-color, #2e2f42);
@@ -172,6 +302,20 @@ body {
 
 .footer-logo-studio {
   color: var(--footer-logo-studio, #f4f4fd);
+}
+.footer-text {
+  color: var (--footer-text, #e7e9fc);
+  margin-top: 17.5px;
+}
+
+/*--------------Portfolio----------------*/
+.header {
+}
+
+.portfolio-one {
+}
+
+.header-list {
 }
 
 .portfolio-one-button {
@@ -208,4 +352,12 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--portfolio-two-p, #434455);
+}
+
+.box portfolio-one-button {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 482px;
+  top: 213px;
 }

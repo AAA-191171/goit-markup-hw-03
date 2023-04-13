@@ -70,7 +70,7 @@ body {
   text-decoration: none;
 }
 .container {
-  width: 1158px;
+  width: 1140px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -170,6 +170,12 @@ body {
 
 /*---------------------Section-1------------*/
 .section-one {
+  position: absolute;
+  width: 1440px;
+  height: 600px;
+  left: 0px;
+  top: 72px;
+
   background-color: var(--section-one-background-color, #2e2f42);
 }
 
@@ -226,6 +232,11 @@ body {
   gap: 24px;
 }
 .section-two-container {
+  position: absolute;
+  width: 1128px;
+  height: 104px;
+  left: 156px;
+  top: 792px;
 }
 .section-two-li {
   font-weight: 500;
@@ -245,6 +256,13 @@ body {
 .section-three-photo {
   padding-bottom: 120px;
 }
+.section-three-container {
+  position: absolute;
+  width: 1128px;
+  height: 412px;
+  left: 156px;
+  top: 1016px;
+}
 .section-three {
   font-size: 36px;
   line-height: 1.11;
@@ -260,7 +278,18 @@ body {
 /*---------------------Section-4------------*/
 
 .section-four {
+  position: absolute;
+  width: 1440px;
+  height: 732px;
+  left: 0px;
+  top: 1548px;
   background-color: var(--section-four-background-color);
+}
+.section-four-container {
+  width: 1140px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 .section-four-titel {
   font-size: 36px;
@@ -352,13 +381,17 @@ body {
   height: 72px;
   left: 156px;
 }
-/*---------garaj------*/
-color: var (--footer-text);
-margin-top: 17.5px;
 
 /*--------------Portfolio----------------*/
 .button-container {
   padding-top: 96px;
+}
+.photo-container {
+  position: absolute;
+  width: 1128px;
+  height: 420px;
+  left: 156px;
+  top: 1224px;
 }
 .photo-container {
   padding-bottom: 120px;
@@ -445,4 +478,26 @@ margin-top: 17.5px;
 
 .portfolio-photo {
   border: 1px solid var(--accent);
+}
+.portfolio-photo-one {
+  position: absolute;
+  width: 1128px;
+  height: 420px;
+  left: 156px;
+  top: 288px;
+}
+
+.portfolio-photo-two {
+  position: absolute;
+  width: 1128px;
+  height: 420px;
+  left: 156px;
+  top: 756px;
+}
+.portfolio-photo-three {
+  position: absolute;
+  width: 1128px;
+  height: 420px;
+  left: 156px;
+  top: 1224px;
 }

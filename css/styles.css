@@ -397,7 +397,34 @@ body {
 .photo-container {
   padding-bottom: 120px;
 }
-
+.pfoto-container-one {
+  position: absolute;
+  width: 1128px;
+  height: 420px;
+  left: 156px;
+  top: 288px;
+}
+.pfoto-container-two {
+  position: absolute;
+  width: 1128px;
+  height: 420px;
+  left: 156px;
+  top: 756px;
+}
+.pfoto-container-three {
+  position: absolute;
+  width: 1128px;
+  height: 420px;
+  left: 156px;
+  top: 1224px;
+}
+.portfolio-footer-container {
+  position: absolute;
+  width: 1440px;
+  height: 312px;
+  left: 0px;
+  top: 1764px;
+}
 .button-list {
   display: flex;
   justify-content: center;
@@ -480,25 +507,10 @@ body {
 .portfolio-photo {
   border: 1px solid var(--accent);
 }
-.portfolio-photo-one {
+.portfolio-footer {
   position: absolute;
-  width: 1128px;
-  height: 420px;
-  left: 156px;
-  top: 288px;
-}
-
-.portfolio-photo-two {
-  position: absolute;
-  width: 1128px;
-  height: 420px;
-  left: 156px;
-  top: 756px;
-}
-.portfolio-photo-three {
-  position: absolute;
-  width: 1128px;
-  height: 420px;
-  left: 156px;
-  top: 1224px;
+  width: 1440px;
+  height: 312px;
+  left: 0px;
+  top: 1764px;
 }

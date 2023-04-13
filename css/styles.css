@@ -40,7 +40,7 @@ img {
   --section-one-button-hf: #404bbf;
   --button-text-hf: #404bbf;
   --footer-logo-studio: #f4f4fd;
-  --footer-text: #e7e9fc;
+  --footer-text: #f4f4fd;
   --section-two-li: #2e2f42;
   --section-two-par: #434455;
   --section-three: #2e2f42;
@@ -308,12 +308,21 @@ body {
 /*---------------------Footer------------*/
 
 .footer {
+  position: absolute;
+  width: 1440px;
+  height: 312px;
+  left: 0px;
+  top: 2280px;
+
   background-color: var(--footer-background-color, #2e2f42);
+}
+.footer-container {
+  padding-top: 101.5px;
+  padding-bottom: 100px;
+  padding-left: 156px;
 }
 
 .footer-logo {
-  font-family: 'Raleway', sans-serif;
-
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -327,9 +336,26 @@ body {
   color: var(--footer-logo-studio);
 }
 .footer-text {
-  color: var (--footer-text);
-  margin-top: 17.5px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  letter-spacing: 0.02em;
+
+  color: var(--footer-text);
 }
+.footer-text {
+  position: absolute;
+  width: 264px;
+  height: 72px;
+  left: 156px;
+}
+/*---------garaj------*/
+color: var (--footer-text);
+margin-top: 17.5px;
+
 /*--------------Portfolio----------------*/
 .button-container {
   padding-top: 96px;

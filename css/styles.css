@@ -73,7 +73,7 @@ body {
   text-decoration: none;
 }
 .container {
-  width: 1140px;
+  width: 1440px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -110,7 +110,6 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-color-web);
-  margin-left: 156px;
 }
 
 .heder-logo-studio {
@@ -228,7 +227,12 @@ body {
   display: flex;
   gap: 24px;
 }
-
+.section-two-container {
+  width: 1440px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
 .section-two-li {
   font-weight: 500;
   font-size: 20px;
@@ -238,7 +242,7 @@ body {
 }
 .section-two-par {
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.6;
   letter-spacing: 0.02em;
   color: var(--section-two-par);
 }
@@ -255,15 +259,20 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--section-three);
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .section-three-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
+  justify-content: center;
 }
+
 /*---------------------Section-4------------*/
 
 .section-four {
+  padding-top: 120px;
+  padding-bottom: 120px;
   background-color: var(--section-four-background-color);
 }
 
@@ -279,7 +288,9 @@ body {
 
 .section-four-team {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
+  justify-content: center;
 }
 .section-four-h {
   background-color: var(--section-four-h-background-color);
